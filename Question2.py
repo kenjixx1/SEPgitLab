@@ -25,3 +25,9 @@ class Taxi(Transportation):
     def calculate(self):
         return self.distance*40
 
+class Train(Transportation):
+    def __init__(self, s, e, d):
+        super().__init__(s, e, d)
+    
+    def calculate(self):
+        return self.distance*5
