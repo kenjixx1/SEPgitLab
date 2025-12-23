@@ -11,6 +11,17 @@ class Simple_drawing_window(QWidget):
     def paintEvent(self, e):
         pass
 
+class Simple_drawing_window1(Simple_drawing_window):
+    def __init__(self):
+        QWidget.__init__(self)
+        self.setWindowTitle("Poiiii")
+
+    def paintEvent(self, e):
+        p = QPainter(self)
+        p.setBrush(QColor(255, 0, 0))
+        p.drawRect(50, 50, 150, 150)
+        p.end()
+
 class Simple_drawing_window2(Simple_drawing_window):
     def __init__(self):
         QWidget.__init__(self, None)
@@ -22,6 +33,7 @@ class Simple_drawing_window2(Simple_drawing_window):
         p.setBrush(QColor(0, 255, 0))
         p.drawEllipse(50, 50, 150, 150)
         p.end()
+
 
 def main():
     app = QApplication(sys.argv)
