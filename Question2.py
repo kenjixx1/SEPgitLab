@@ -18,5 +18,10 @@ class Walk(Transportation):
     def calculate(self):
         return 0
     
-
+class Taxi(Transportation):
+    def __init__(self, s, e, d):
+        super().__init__(s, e, d)
+    
+    def calculate(self):
+        return self.distance*40
 
