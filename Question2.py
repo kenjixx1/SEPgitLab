@@ -31,3 +31,16 @@ class Train(Transportation):
     
     def calculate(self):
         return self.distance*5
+
+def main():
+    t1 = Walk("Dorm", "Classroom", 2)
+    t2 = Taxi("Home", "Mall", 10)
+    t3 = Train("Station A", "Station B", 8)
+
+    print("Walk cost:", t1.cost(), "Baht")
+    print("Taxi cost:", t2.cost(), "Baht")
+    print("Train cost:", t3.cost(), "Baht")
+
+
+if __name__ == "__main__":
+    main()
