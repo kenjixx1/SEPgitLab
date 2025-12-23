@@ -37,9 +37,9 @@ def main():
     t2 = Taxi("Home", "Mall", 10)
     t3 = Train("Station A", "Station B", 8)
 
-    print("Walk cost:", t1.cost(), "Baht")
-    print("Taxi cost:", t2.cost(), "Baht")
-    print("Train cost:", t3.cost(), "Baht")
+    print("Walk cost:", t1.calculate(), "Baht")
+    print("Taxi cost:", t2.calculate(), "Baht")
+    print("Train cost:", t3.calculate(), "Baht")
 
 
 if __name__ == "__main__":
